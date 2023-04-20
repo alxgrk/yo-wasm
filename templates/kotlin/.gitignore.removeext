@@ -1,0 +1,7 @@
+# WASM output files
+*.wasm
+
+# Kotlin specific files
+build/
+.gradle/
+.idea/

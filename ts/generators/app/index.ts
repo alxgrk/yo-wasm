@@ -12,6 +12,7 @@ import { rust } from './languages/rust';
 import { clang } from './languages/c';
 import { assemblyScript } from './languages/assembly-script';
 import { failed } from './utils/errorable';
+import { kotlin } from './languages/kotlin';
 import { swift } from './languages/swift';
 import { tinygo } from './languages/tinygo';
 import { FMT_CHALK, FMT_MARKDOWN } from './formatter';
@@ -68,6 +69,7 @@ module.exports = class extends Generator {
         choices: [ // In alphabetical order
           'AssemblyScript',
           'C',
+          'Kotlin',
           'Rust',
           'Swift',
           'TinyGo'
@@ -226,6 +228,8 @@ function languageProvider(language: string): Language {
       return assemblyScript;
     case 'C':
       return clang;
+    case 'Kotlin':
+      return kotlin;
     case 'Swift':
       return swift;
     case 'TinyGo':

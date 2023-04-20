@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Kotlin: Build WASM",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": [":build"],
+            "problemMatcher": [
+                "$kotlinc"
+            ]
+        }
+    ]
+}

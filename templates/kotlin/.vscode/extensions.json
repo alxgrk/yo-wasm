@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "fwcd.kotlin",
+    "vadimcn.vscode-lldb",
+    "dtsvet.vscode-wasm"
+  ]
+}

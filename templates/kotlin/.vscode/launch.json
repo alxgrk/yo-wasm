@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Debug WASM",
+            "type": "lldb",
+            "request": "launch",
+            "program": "wasmtime",
+            "args": [
+                "run",
+                "${workspaceFolder}/build/js/packages/${workspaceRootFolderName}/kotlin/${workspaceRootFolderName}.wasm",
+                "-g"
+            ],
+            "cwd": "${workspaceFolder}",
+            "sourceLanguages": [
+                "kotlin"
+            ],
+            "preLaunchTask": "Kotlin: Build WASM"
+        }
+    ]
+}
